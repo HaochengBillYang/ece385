@@ -1,0 +1,6 @@
+
+State Machine - |adder2|control:run_once|curr_state
+Name curr_state.A curr_state.C curr_state.B 
+curr_state.A 0 0 0 
+curr_state.B 1 0 1 
+curr_state.C 1 1 0 

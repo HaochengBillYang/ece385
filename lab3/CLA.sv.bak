@@ -1,0 +1,5 @@
+module CLA4(
+input [3:0] A, B,
+input c_in
+
+);

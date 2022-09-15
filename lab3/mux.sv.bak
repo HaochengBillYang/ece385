@@ -1,0 +1,2 @@
+module (input [4:0] mux_0, mux_1
+			input mux_select);

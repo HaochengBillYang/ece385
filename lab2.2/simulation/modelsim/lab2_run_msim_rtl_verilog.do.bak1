@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/Synchronizers.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/Router.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/Reg_4.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/HexDriver.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/Control.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/compute.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/Register_unit.sv}
+vlog -sv -work work +incdir+C:/Users/RTX\ ON/Downloads/logic_processor_4bit {C:/Users/RTX ON/Downloads/logic_processor_4bit/Processor.sv}
+

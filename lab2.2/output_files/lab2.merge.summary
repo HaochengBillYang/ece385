@@ -1,0 +1,16 @@
+Partition Merge Status : Successful - Fri Sep 09 12:07:50 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : lab2
+Top-level Entity Name : Processor
+Family : MAX 10
+Total logic elements : 819
+    Total combinational functions : 527
+    Dedicated logic registers : 591
+Total registers : 591
+Total pins : 66
+Total virtual pins : 0
+Total memory bits : 1,088
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
