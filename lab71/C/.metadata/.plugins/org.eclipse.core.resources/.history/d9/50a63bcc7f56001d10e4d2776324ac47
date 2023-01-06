@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "text_mode_vga.h"
+#include "palette_test.h"
+
+
+
+int main(){
+	paletteTest();
+	textVGATest();
+	return 0;
+}

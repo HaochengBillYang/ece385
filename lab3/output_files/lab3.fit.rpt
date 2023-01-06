@@ -1,5 +1,5 @@
 Fitter report for lab3
-Thu Sep 15 16:56:00 2022
+Fri Sep 16 11:15:38 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -65,15 +65,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Sep 15 16:56:00 2022       ;
+; Fitter Status                      ; Successful - Fri Sep 16 11:15:38 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab3                                        ;
 ; Top-level Entity Name              ; adder2                                      ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 82 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 82 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 79 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 79 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 20 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 20                                          ;
 ; Total pins                         ; 65 / 360 ( 18 % )                           ;
@@ -151,7 +151,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -166,8 +166,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 252 ) ; 0.00 % ( 0 / 252 )         ; 0.00 % ( 0 / 252 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 252 ) ; 0.00 % ( 0 / 252 )         ; 0.00 % ( 0 / 252 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 249 ) ; 0.00 % ( 0 / 249 )         ; 0.00 % ( 0 / 249 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 249 ) ; 0.00 % ( 0 / 249 )         ; 0.00 % ( 0 / 249 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -190,7 +190,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 236 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 233 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -206,26 +206,26 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/ece385/lab3/output_files
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 82 / 49,760 ( < 1 % ) ;
-;     -- Combinational with no register       ; 62                    ;
+; Total logic elements                        ; 79 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 59                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 20                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 62                    ;
-;     -- 3 input functions                    ; 11                    ;
-;     -- <=2 input functions                  ; 9                     ;
+;     -- 4 input functions                    ; 57                    ;
+;     -- 3 input functions                    ; 12                    ;
+;     -- <=2 input functions                  ; 10                    ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 82                    ;
+;     -- normal mode                          ; 79                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 20 / 51,509 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 20 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 8 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 9 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 65 / 360 ( 18 % )     ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
@@ -246,11 +246,11 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/ece385/lab3/output_files
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 2.0% / 2.4% / 1.5%    ;
+; Peak interconnect usage (total/H/V)         ; 1.5% / 1.8% / 1.2%    ;
 ; Maximum fan-out                             ; 20                    ;
 ; Highest non-global fan-out                  ; 20                    ;
-; Total fan-out                               ; 499                   ;
-; Average fan-out                             ; 1.98                  ;
+; Total fan-out                               ; 481                   ;
+; Average fan-out                             ; 1.93                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -263,26 +263,26 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/ece385/lab3/output_files
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 82 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 62                   ; 0                              ;
+; Total logic elements                        ; 79 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 59                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 20                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 62                   ; 0                              ;
-;     -- 3 input functions                    ; 11                   ; 0                              ;
-;     -- <=2 input functions                  ; 9                    ; 0                              ;
+;     -- 4 input functions                    ; 57                   ; 0                              ;
+;     -- 3 input functions                    ; 12                   ; 0                              ;
+;     -- <=2 input functions                  ; 10                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 82                   ; 0                              ;
+;     -- normal mode                          ; 79                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 20                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 20 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 8 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 9 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 65                   ; 0                              ;
@@ -300,8 +300,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/ece385/lab3/output_files
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 505                  ; 8                              ;
-;     -- Registered Connections               ; 184                  ; 0                              ;
+;     -- Total Connections                    ; 487                  ; 8                              ;
+;     -- Registered Connections               ; 183                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -338,13 +338,13 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/ece385/lab3/output_files
 ; Run_Accumulate ; A7    ; 7        ; 49           ; 54           ; 28           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SW[0]          ; C10   ; 7        ; 51           ; 54           ; 28           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SW[1]          ; C11   ; 7        ; 51           ; 54           ; 21           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; SW[2]          ; D12   ; 7        ; 51           ; 54           ; 0            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; SW[2]          ; D12   ; 7        ; 51           ; 54           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SW[3]          ; C12   ; 7        ; 54           ; 54           ; 28           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; SW[4]          ; A12   ; 7        ; 54           ; 54           ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; SW[5]          ; B12   ; 7        ; 49           ; 54           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; SW[4]          ; A12   ; 7        ; 54           ; 54           ; 21           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; SW[5]          ; B12   ; 7        ; 49           ; 54           ; 0            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SW[6]          ; A13   ; 7        ; 54           ; 54           ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; SW[7]          ; A14   ; 7        ; 58           ; 54           ; 28           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; SW[8]          ; B14   ; 7        ; 56           ; 54           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; SW[7]          ; A14   ; 7        ; 58           ; 54           ; 28           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; SW[8]          ; B14   ; 7        ; 56           ; 54           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SW[9]          ; F15   ; 7        ; 69           ; 54           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -1008,46 +1008,42 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------+-------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                      ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                   ; Entity Name  ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------+--------------+--------------+
-; |adder2                    ; 82 (1)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 65   ; 0            ; 62 (1)       ; 0 (0)             ; 20 (0)           ; 0          ; |adder2                                               ; adder2       ; work         ;
-;    |HexDriver:AHex0|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:AHex0                               ; HexDriver    ; work         ;
-;    |HexDriver:AHex1|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:AHex1                               ; HexDriver    ; work         ;
-;    |HexDriver:BHex0|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex0                               ; HexDriver    ; work         ;
-;    |HexDriver:BHex1|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex1                               ; HexDriver    ; work         ;
-;    |HexDriver:BHex2|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex2                               ; HexDriver    ; work         ;
-;    |HexDriver:BHex3|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex3                               ; HexDriver    ; work         ;
-;    |control:run_once|      ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0          ; |adder2|control:run_once                              ; control      ; work         ;
-;    |reg_17:reg_unit|       ; 18 (18)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 17 (17)          ; 0          ; |adder2|reg_17:reg_unit                               ; reg_17       ; work         ;
-;    |router:route|          ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0          ; |adder2|router:route                                  ; router       ; work         ;
-;    |select_adder:adders|   ; 32 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (4)       ; 0 (0)             ; 14 (1)           ; 0          ; |adder2|select_adder:adders                           ; select_adder ; work         ;
-;       |ADDER4:FA0|         ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA0                ; ADDER4       ; work         ;
-;          |full_adder:FA0|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA0|full_adder:FA0 ; full_adder   ; work         ;
-;          |full_adder:FA1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA0|full_adder:FA1 ; full_adder   ; work         ;
-;          |full_adder:FA2|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA0|full_adder:FA2 ; full_adder   ; work         ;
-;          |full_adder:FA3|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA0|full_adder:FA3 ; full_adder   ; work         ;
-;       |ADDER4:FA1|         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA1                ; ADDER4       ; work         ;
-;          |full_adder:FA1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA1|full_adder:FA1 ; full_adder   ; work         ;
-;          |full_adder:FA2|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA1|full_adder:FA2 ; full_adder   ; work         ;
-;       |ADDER4:FA2|         ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA2                ; ADDER4       ; work         ;
-;          |full_adder:FA1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA2|full_adder:FA1 ; full_adder   ; work         ;
-;          |full_adder:FA2|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA2|full_adder:FA2 ; full_adder   ; work         ;
-;          |full_adder:FA3|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA2|full_adder:FA3 ; full_adder   ; work         ;
-;       |ADDER4:FA3|         ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA3                ; ADDER4       ; work         ;
-;          |full_adder:FA1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA3|full_adder:FA1 ; full_adder   ; work         ;
-;       |ADDER4:FA4|         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA4                ; ADDER4       ; work         ;
-;          |full_adder:FA1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA4|full_adder:FA1 ; full_adder   ; work         ;
-;       |ADDER4:FA6|         ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA6                ; ADDER4       ; work         ;
-;          |full_adder:FA1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA6|full_adder:FA1 ; full_adder   ; work         ;
-;          |full_adder:FA2|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA6|full_adder:FA2 ; full_adder   ; work         ;
-;          |full_adder:FA3|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|ADDER4:FA6|full_adder:FA3 ; full_adder   ; work         ;
-;       |MUX2:M12|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|MUX2:M12                  ; MUX2         ; work         ;
-;       |MUX2:M4|            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|select_adder:adders|MUX2:M4                   ; MUX2         ; work         ;
-;       |MUX2:M8|            ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0          ; |adder2|select_adder:adders|MUX2:M8                   ; MUX2         ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------+--------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                     ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                  ; Entity Name  ; Library Name ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+------------------------------------------------------+--------------+--------------+
+; |adder2                    ; 79 (1)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 65   ; 0            ; 59 (1)       ; 0 (0)             ; 20 (0)           ; 0          ; |adder2                                              ; adder2       ; work         ;
+;    |HexDriver:AHex0|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:AHex0                              ; HexDriver    ; work         ;
+;    |HexDriver:AHex1|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:AHex1                              ; HexDriver    ; work         ;
+;    |HexDriver:BHex0|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex0                              ; HexDriver    ; work         ;
+;    |HexDriver:BHex1|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex1                              ; HexDriver    ; work         ;
+;    |HexDriver:BHex2|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex2                              ; HexDriver    ; work         ;
+;    |HexDriver:BHex3|       ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |adder2|HexDriver:BHex3                              ; HexDriver    ; work         ;
+;    |control:run_once|      ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0          ; |adder2|control:run_once                             ; control      ; work         ;
+;    |reg_17:reg_unit|       ; 17 (17)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 17 (17)          ; 0          ; |adder2|reg_17:reg_unit                              ; reg_17       ; work         ;
+;    |ripple_adder:adder|    ; 33 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 17 (0)           ; 0          ; |adder2|ripple_adder:adder                           ; ripple_adder ; work         ;
+;       |ADDER4:FA0|         ; 9 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA0                ; ADDER4       ; work         ;
+;          |full_adder:FA0|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA0|full_adder:FA0 ; full_adder   ; work         ;
+;          |full_adder:FA1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA0|full_adder:FA1 ; full_adder   ; work         ;
+;          |full_adder:FA2|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA0|full_adder:FA2 ; full_adder   ; work         ;
+;          |full_adder:FA3|  ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA0|full_adder:FA3 ; full_adder   ; work         ;
+;       |ADDER4:FA1|         ; 10 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA1                ; ADDER4       ; work         ;
+;          |full_adder:FA0|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA1|full_adder:FA0 ; full_adder   ; work         ;
+;          |full_adder:FA1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA1|full_adder:FA1 ; full_adder   ; work         ;
+;          |full_adder:FA2|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA1|full_adder:FA2 ; full_adder   ; work         ;
+;          |full_adder:FA3|  ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA1|full_adder:FA3 ; full_adder   ; work         ;
+;       |ADDER4:FA2|         ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA2                ; ADDER4       ; work         ;
+;          |full_adder:FA0|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA2|full_adder:FA0 ; full_adder   ; work         ;
+;          |full_adder:FA1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA2|full_adder:FA1 ; full_adder   ; work         ;
+;          |full_adder:FA2|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA2|full_adder:FA2 ; full_adder   ; work         ;
+;          |full_adder:FA3|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA2|full_adder:FA3 ; full_adder   ; work         ;
+;       |ADDER4:FA3|         ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 5 (0)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA3                ; ADDER4       ; work         ;
+;          |full_adder:FA0|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA3|full_adder:FA0 ; full_adder   ; work         ;
+;          |full_adder:FA1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA3|full_adder:FA1 ; full_adder   ; work         ;
+;          |full_adder:FA2|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA3|full_adder:FA2 ; full_adder   ; work         ;
+;          |full_adder:FA3|  ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (2)            ; 0          ; |adder2|ripple_adder:adder|ADDER4:FA3|full_adder:FA3 ; full_adder   ; work         ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+------------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1108,163 +1104,159 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX5[4]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX5[5]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX5[6]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SW[8]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[8]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[9]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[0]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[1]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[2]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[3]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[3]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[4]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[5]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[6]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[7]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[5]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[6]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[7]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; Clk            ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; Reset_Clear    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; Reset_Clear    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; Run_Accumulate ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                         ;
-+----------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                      ; Pad To Core Index ; Setting ;
-+----------------------------------------------------------+-------------------+---------+
-; SW[8]                                                    ;                   ;         ;
-;      - select_adder:adders|ADDER4:FA3|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA4|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|MUX2:M8|Y[0]~0                ; 0                 ; 6       ;
-;      - select_adder:adders|MUX2:M8|Y[1]~1                ; 0                 ; 6       ;
-;      - LED[0]~output                                     ; 0                 ; 6       ;
-; SW[9]                                                    ;                   ;         ;
-;      - select_adder:adders|ADDER4:FA3|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA4|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA4|full_adder:FA1|s~0 ; 0                 ; 6       ;
-;      - LED[1]~output                                     ; 0                 ; 6       ;
-; SW[0]                                                    ;                   ;         ;
-;      - HexDriver:AHex0|WideOr6~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr5~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr4~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr3~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr2~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr1~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr0~0                         ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA0|s~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA1|s~0 ; 0                 ; 6       ;
-; SW[1]                                                    ;                   ;         ;
-;      - HexDriver:AHex0|WideOr6~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr5~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr4~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr3~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr2~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr1~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr0~0                         ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA1|s~0 ; 0                 ; 6       ;
-; SW[2]                                                    ;                   ;         ;
-;      - HexDriver:AHex0|WideOr6~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr5~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr4~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr3~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr2~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr1~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr0~0                         ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA2|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA2|s~0 ; 0                 ; 6       ;
-; SW[3]                                                    ;                   ;         ;
-;      - HexDriver:AHex0|WideOr6~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr5~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr4~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr3~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr2~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr1~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex0|WideOr0~0                         ; 0                 ; 6       ;
-;      - select_adder:adders|c8~0                          ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA3|s   ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA0|full_adder:FA3|c~0 ; 0                 ; 6       ;
-; SW[4]                                                    ;                   ;         ;
-;      - HexDriver:AHex1|WideOr6~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr5~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr4~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr3~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr2~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr1~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr0~0                         ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA2|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA1|full_adder:FA1|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|MUX2:M4|Y[0]~0                ; 0                 ; 6       ;
-;      - router:route|Q_Out[5]~0                           ; 0                 ; 6       ;
-; SW[5]                                                    ;                   ;         ;
-;      - HexDriver:AHex1|WideOr6~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr5~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr4~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr3~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr2~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr1~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr0~0                         ; 1                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA2|full_adder:FA1|c~0 ; 1                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA1|full_adder:FA1|c~0 ; 1                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA2|full_adder:FA1|s~0 ; 1                 ; 6       ;
-; SW[6]                                                    ;                   ;         ;
-;      - HexDriver:AHex1|WideOr6~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr5~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr4~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr3~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr2~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr1~0                         ; 0                 ; 6       ;
-;      - HexDriver:AHex1|WideOr0~0                         ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA2|full_adder:FA2|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA1|full_adder:FA2|c~0 ; 0                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA2|full_adder:FA2|s~0 ; 0                 ; 6       ;
-; SW[7]                                                    ;                   ;         ;
-;      - HexDriver:AHex1|WideOr6~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr5~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr4~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr3~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr2~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr1~0                         ; 1                 ; 6       ;
-;      - HexDriver:AHex1|WideOr0~0                         ; 1                 ; 6       ;
-;      - select_adder:adders|c8~1                          ; 1                 ; 6       ;
-;      - select_adder:adders|ADDER4:FA2|full_adder:FA3|s~0 ; 1                 ; 6       ;
-; Clk                                                      ;                   ;         ;
-; Reset_Clear                                              ;                   ;         ;
-;      - reg_17:reg_unit|Data_Out[16]                      ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[0]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[1]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[2]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[3]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[4]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[5]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[6]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[7]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[8]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[9]                       ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[10]                      ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[11]                      ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[12]                      ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[13]                      ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[14]                      ; 1                 ; 6       ;
-;      - reg_17:reg_unit|Data_Out[15]                      ; 1                 ; 6       ;
-;      - control:run_once|curr_state.B                     ; 1                 ; 6       ;
-;      - control:run_once|curr_state.A                     ; 1                 ; 6       ;
-;      - control:run_once|curr_state.C                     ; 1                 ; 6       ;
-; Run_Accumulate                                           ;                   ;         ;
-;      - control:run_once|Selector1~0                      ; 0                 ; 6       ;
-;      - control:run_once|Selector0~0                      ; 0                 ; 6       ;
-;      - control:run_once|Selector2~0                      ; 0                 ; 6       ;
-+----------------------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                        ;
++---------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                     ; Pad To Core Index ; Setting ;
++---------------------------------------------------------+-------------------+---------+
+; SW[8]                                                   ;                   ;         ;
+;      - ripple_adder:adder|ADDER4:FA2|full_adder:FA0|c~0 ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA2|full_adder:FA0|s   ; 1                 ; 6       ;
+;      - LED[0]~output                                    ; 1                 ; 6       ;
+; SW[9]                                                   ;                   ;         ;
+;      - ripple_adder:adder|ADDER4:FA2|full_adder:FA2|c~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA2|full_adder:FA1|s   ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA2|full_adder:FA2|s   ; 0                 ; 6       ;
+;      - LED[1]~output                                    ; 0                 ; 6       ;
+; SW[0]                                                   ;                   ;         ;
+;      - HexDriver:AHex0|WideOr6~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr5~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr4~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr3~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr2~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr1~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr0~0                        ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA1|c~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA0|s~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA1|s~0 ; 0                 ; 6       ;
+; SW[1]                                                   ;                   ;         ;
+;      - HexDriver:AHex0|WideOr6~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr5~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr4~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr3~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr2~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr1~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr0~0                        ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA1|c~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA1|s~0 ; 0                 ; 6       ;
+; SW[2]                                                   ;                   ;         ;
+;      - HexDriver:AHex0|WideOr6~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr5~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr4~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr3~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr2~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr1~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex0|WideOr0~0                        ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA3|c~2 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA2|s~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA3|s~0 ; 0                 ; 6       ;
+; SW[3]                                                   ;                   ;         ;
+;      - HexDriver:AHex0|WideOr6~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex0|WideOr5~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex0|WideOr4~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex0|WideOr3~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex0|WideOr2~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex0|WideOr1~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex0|WideOr0~0                        ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA3|c~0 ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA3|c~1 ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA0|full_adder:FA3|s~0 ; 1                 ; 6       ;
+; SW[4]                                                   ;                   ;         ;
+;      - HexDriver:AHex1|WideOr6~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr5~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr4~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr3~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr2~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr1~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr0~0                        ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA0|c~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA0|s   ; 0                 ; 6       ;
+; SW[5]                                                   ;                   ;         ;
+;      - HexDriver:AHex1|WideOr6~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr5~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr4~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr3~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr2~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr1~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr0~0                        ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA1|c~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA1|s   ; 0                 ; 6       ;
+; SW[6]                                                   ;                   ;         ;
+;      - HexDriver:AHex1|WideOr6~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex1|WideOr5~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex1|WideOr4~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex1|WideOr3~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex1|WideOr2~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex1|WideOr1~0                        ; 1                 ; 6       ;
+;      - HexDriver:AHex1|WideOr0~0                        ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA3|c~2 ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA2|s   ; 1                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA3|s   ; 1                 ; 6       ;
+; SW[7]                                                   ;                   ;         ;
+;      - HexDriver:AHex1|WideOr6~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr5~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr4~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr3~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr2~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr1~0                        ; 0                 ; 6       ;
+;      - HexDriver:AHex1|WideOr0~0                        ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA3|c~0 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA3|c~1 ; 0                 ; 6       ;
+;      - ripple_adder:adder|ADDER4:FA1|full_adder:FA3|s~0 ; 0                 ; 6       ;
+; Clk                                                     ;                   ;         ;
+; Reset_Clear                                             ;                   ;         ;
+;      - reg_17:reg_unit|Data_Out[16]                     ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[0]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[1]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[2]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[3]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[4]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[5]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[6]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[7]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[8]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[9]                      ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[10]                     ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[11]                     ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[12]                     ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[13]                     ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[14]                     ; 0                 ; 6       ;
+;      - reg_17:reg_unit|Data_Out[15]                     ; 0                 ; 6       ;
+;      - control:run_once|curr_state.B                    ; 0                 ; 6       ;
+;      - control:run_once|curr_state.A                    ; 0                 ; 6       ;
+;      - control:run_once|curr_state.C                    ; 0                 ; 6       ;
+; Run_Accumulate                                          ;                   ;         ;
+;      - control:run_once|Selector1~0                     ; 0                 ; 6       ;
+;      - control:run_once|Selector0~0                     ; 0                 ; 6       ;
+;      - control:run_once|Selector2~0                     ; 0                 ; 6       ;
++---------------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                          ;
-+--------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Name                           ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Clk                            ; PIN_P11            ; 20      ; Clock                     ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; Reset_Clear                    ; PIN_B8             ; 20      ; Async. clear              ; no     ; --                   ; --               ; --                        ;
-; control:run_once|curr_state.B  ; FF_X67_Y50_N7      ; 19      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; reg_17:reg_unit|Data_Out[13]~0 ; LCCOMB_X66_Y50_N14 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-+--------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                       ;
++-------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                          ; Location      ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Clk                           ; PIN_P11       ; 20      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; Reset_Clear                   ; PIN_B8        ; 20      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; control:run_once|curr_state.B ; FF_X60_Y49_N5 ; 18      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++-------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1272,7 +1264,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Clk  ; PIN_P11  ; 20      ; 4                                    ; Global Clock         ; GCLK19           ; --                        ;
+; Clk  ; PIN_P11  ; 20      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1281,46 +1273,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 134 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 25 / 5,382 ( < 1 % )    ;
+; Block interconnects   ; 121 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 23 / 5,382 ( < 1 % )    ;
 ; C4 interconnects      ; 86 / 106,704 ( < 1 % )  ;
-; Direct links          ; 22 / 148,641 ( < 1 % )  ;
+; Direct links          ; 20 / 148,641 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
 ; Local interconnects   ; 26 / 49,760 ( < 1 % )   ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 22 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 128 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 27 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 94 / 147,764 ( < 1 % )  ;
 +-----------------------+-------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 10.25) ; Number of LABs  (Total = 8) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 1                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 1                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 2                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 1                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 3                           ;
-+---------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------+
+; LAB Logic Elements                                                       ;
++--------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 8.78) ; Number of LABs  (Total = 9) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 2                           ;
+; 2                                          ; 0                           ;
+; 3                                          ; 1                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 1                           ;
+; 6                                          ; 0                           ;
+; 7                                          ; 1                           ;
+; 8                                          ; 0                           ;
+; 9                                          ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 0                           ;
+; 12                                         ; 0                           ;
+; 13                                         ; 0                           ;
+; 14                                         ; 1                           ;
+; 15                                         ; 0                           ;
+; 16                                         ; 3                           ;
++--------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.38) ; Number of LABs  (Total = 8) ;
+; LAB-wide Signals  (Average = 1.22) ; Number of LABs  (Total = 9) ;
 +------------------------------------+-----------------------------+
 ; 1 Async. clear                     ; 4                           ;
 ; 1 Clock                            ; 4                           ;
@@ -1331,87 +1323,84 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 12.75) ; Number of LABs  (Total = 8) ;
+; Number of Signals Sourced  (Average = 11.00) ; Number of LABs  (Total = 9) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
-; 1                                            ; 1                           ;
+; 1                                            ; 2                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 1                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 2                           ;
+; 6                                            ; 1                           ;
+; 7                                            ; 1                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
+; 14                                           ; 1                           ;
 ; 15                                           ; 0                           ;
 ; 16                                           ; 0                           ;
 ; 17                                           ; 0                           ;
-; 18                                           ; 1                           ;
-; 19                                           ; 1                           ;
-; 20                                           ; 1                           ;
-; 21                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 2                           ;
 ; 22                                           ; 0                           ;
-; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 1                           ;
+; 23                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 8.88) ; Number of LABs  (Total = 8) ;
+; Number of Signals Sourced Out  (Average = 7.44) ; Number of LABs  (Total = 9) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 1                           ;
+; 1                                               ; 3                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 1                           ;
 ; 6                                               ; 0                           ;
-; 7                                               ; 2                           ;
+; 7                                               ; 1                           ;
 ; 8                                               ; 0                           ;
 ; 9                                               ; 0                           ;
-; 10                                              ; 0                           ;
-; 11                                              ; 1                           ;
-; 12                                              ; 2                           ;
+; 10                                              ; 1                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 0                           ;
 ; 13                                              ; 0                           ;
-; 14                                              ; 0                           ;
-; 15                                              ; 0                           ;
-; 16                                              ; 1                           ;
+; 14                                              ; 3                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 8.63) ; Number of LABs  (Total = 8) ;
+; Number of Distinct Inputs  (Average = 7.22) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
+; 3                                           ; 1                           ;
 ; 4                                           ; 3                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 1                           ;
-; 9                                           ; 0                           ;
+; 9                                           ; 1                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
-; 13                                          ; 0                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 1                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 0                           ;
 ; 16                                          ; 0                           ;
 ; 17                                          ; 0                           ;
-; 18                                          ; 1                           ;
-; 19                                          ; 1                           ;
+; 18                                          ; 0                           ;
+; 19                                          ; 0                           ;
+; 20                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1640,7 +1629,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.07 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1648,9 +1637,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/ece385/lab3/output_files/lab3.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 6602 megabytes
-    Info: Processing ended: Thu Sep 15 16:56:00 2022
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 6599 megabytes
+    Info: Processing ended: Fri Sep 16 11:15:39 2022
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:13
 
 

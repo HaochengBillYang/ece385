@@ -1,0 +1,13 @@
+module REGFILE_(
+	input logic Clk,
+	input logic [2:0] DRMUX_Out, SR1MUX_Out,
+	input logic LD_REG,
+	input logic [15:0] IR
+);
+
+
+
+
+
+
+endmodule

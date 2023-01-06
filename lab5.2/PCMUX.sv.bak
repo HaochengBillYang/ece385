@@ -1,0 +1,7 @@
+module PCMUX(	input logic [15:0] PC_PP, BUS, MARMUX,
+					input logic [1:0] PCMUX,
+					output logic [15:0] PC_in);
+
+
+
+endmodule

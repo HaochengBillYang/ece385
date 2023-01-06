@@ -1,0 +1,10 @@
+module PC(input logic Clk, LD_PC, Reset,
+					input logic [15:0] PC_in,
+					output logic [15:0] PC_out, PC_next
+);
+
+reg_16 pc(.Clk, .Reset, .Load(LD_PC), .D_in(PC_in), .D_out(PC_out));
+
+assign PC_next = PC_out + 16'b0000000000000001;
+
+endmodule

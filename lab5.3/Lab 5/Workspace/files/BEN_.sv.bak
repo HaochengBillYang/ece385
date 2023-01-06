@@ -1,0 +1,37 @@
+module BEN_ ( input logic LD_BEN, LD_CC,
+              input  logic [15:0]  IR, BUS,
+              output logic [15:0]  BEN);
+
+logic N, Z, P;
+
+always comb
+begin
+
+
+if ((BUS==16'b0000)&&LD_CC)
+begin
+	Z = 1'b1;
+	N = 1'b0;
+	P = 1'b0;
+end
+else if ((BUS[15] == 1'b1)&&LD_CC)
+begin
+	Z = 1'b0;
+	N = 1'b1;
+	P = 1'b0;
+end
+else if ((BUS[15] == 1'b0)&&LD_CC)
+begin
+	Z = 1'b0;
+	N = 1'b0;
+	P = 1'b1;
+end
+
+if (LD_BEN == 1'b1)
+	BEN = ((N&&IR[11])||(Z&&IR[10])||(P&&IR[19]));
+else
+	BEN = 1'b0;
+
+end
+
+endmodule

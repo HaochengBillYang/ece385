@@ -1,0 +1,91 @@
+module REGFILE_(
+	input logic Clk, Reset, LD_REG,
+	input logic [2:0] DRMUX_out, SR1MUX_out,
+	input logic [15:0] IR, BUS,
+	output logic [15:0] ALU_A, SR2_out
+);
+
+
+	logic [15:0]R[8];
+	logic [7:0]LD;
+	
+	
+	always_comb
+	begin
+	if(LD_REG)
+		begin
+			case(DRMUX_out)
+			3'b000:
+			begin
+			LD[7:0] = 8'b10000000;
+			end
+			3'b001:
+			begin
+			LD[7:0] = 8'b01000000;
+			end
+			3'b010:
+			begin
+			LD[7:0] = 8'b00100000;
+			end
+			3'b011:
+			begin
+			LD[7:0] = 8'b00010000;
+			end
+			3'b100:
+			begin
+			LD[7:0] = 8'b00001000;
+			end
+			3'b101:
+			begin
+			LD[7:0] = 8'b00000100;
+			end
+			3'b110:
+			begin
+			LD[7:0] = 8'b00000010;
+			end
+			3'b111:
+			begin
+			LD[7:0] = 8'b00000001;
+			end
+			endcase
+		end
+	else
+		begin
+			LD[7:0] = 8'b00000000;
+		end
+	end
+	
+	reg_16 r0(.Clk, .Reset, .Load(LD[0]), .D_in(BUS), .D_out(R[0][15:0]));
+	reg_16 r1(.Clk, .Reset, .Load(LD[1]), .D_in(BUS), .D_out(R[1][15:0]));
+	reg_16 r2(.Clk, .Reset, .Load(LD[2]), .D_in(BUS), .D_out(R[2][15:0]));
+	reg_16 r3(.Clk, .Reset, .Load(LD[3]), .D_in(BUS), .D_out(R[3][15:0]));
+	reg_16 r4(.Clk, .Reset, .Load(LD[4]), .D_in(BUS), .D_out(R[4][15:0]));
+	reg_16 r5(.Clk, .Reset, .Load(LD[5]), .D_in(BUS), .D_out(R[5][15:0]));
+	reg_16 r6(.Clk, .Reset, .Load(LD[6]), .D_in(BUS), .D_out(R[6][15:0]));
+	reg_16 r7(.Clk, .Reset, .Load(LD[7]), .D_in(BUS), .D_out(R[7][15:0]));
+                                                                                  
+	MUX8 alua(
+						 .Select(SR1MUX_out), 
+						 .A_In(R[0][15:0]),
+						 .B_In(R[1][15:0]),
+						 .C_In(R[2][15:0]),
+						 .D_In(R[3][15:0]),
+						 .E_In(R[4][15:0]),
+						 .F_In(R[5][15:0]),
+						 .G_In(R[6][15:0]),
+						 .H_In(R[7][15:0]), 
+						 .MUX8_out(ALU_A));
+	MUX81 alub(
+						 .Select(IR[2:0]), 
+						 .A_In(R[0][15:0]),
+						 .B_In(R[1][15:0]),
+						 .C_In(R[2][15:0]),
+						 .D_In(R[3][15:0]),
+						 .E_In(R[4][15:0]),
+						 .F_In(R[5][15:0]),
+						 .G_In(R[6][15:0]),
+						 .H_In(R[7][15:0]), 
+						 .MUX8_out(SR2_out));
+	
+	
+endmodule

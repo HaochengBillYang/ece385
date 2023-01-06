@@ -1,0 +1,9 @@
+module MDR(input logic Clk, LD_MDR, Reset,
+					input logic [15:0] MDR_in,
+					output logic [15:0] MDR_out
+);
+
+reg_16 pc(.Clk, .Reset, .Load(LD_MDR), .D_in(MDR_in), .D_out(MDR_out));
+
+
+endmodule

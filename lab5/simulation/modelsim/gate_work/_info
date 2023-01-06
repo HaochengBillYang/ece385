@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/ece385/lab5/simulation/modelsim
+vhard_block
+Z1 !s110 1664543680
+!i10b 1
+!s100 H8?h]@mif`_a[5anJ;b[K2
+I_6=EULALdIRnoWIK=lo@J2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1664539594
+Z4 8lab5.vo
+Z5 Flab5.vo
+L0 1004
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1664543680.000000
+Z8 !s107 lab5.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|lab5.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vslc3_sramtop
+R1
+!i10b 1
+!s100 >Vn>4ZLW5bgGL3hX[^FJ00
+Ibl4kd^LXoQ][SDJ:AV=M21
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

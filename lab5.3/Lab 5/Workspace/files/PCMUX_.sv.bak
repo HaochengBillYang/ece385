@@ -1,0 +1,10 @@
+module PCMUX_(input [15:0] PC_1, BUS, ADDR_ADDER,
+				  input [1:0] PCMUX,
+				  output [15:0] PC_In);
+				  
+	
+	assign logic [15:0] empty_16 = 16'b0000000000000000;
+	MUX_41 pcmux(.F_41(PCMUX), .A_In(PC_1), .B_In(BUS), .C_In(ADDR_ADDER), .D_In(empty_16), .MUX_41_OUT(PC_In))		
+
+	 
+endmodule

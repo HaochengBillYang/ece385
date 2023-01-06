@@ -1,0 +1,48 @@
+module testbench();
+timeunit 10ns;
+timeprecision 1ns;
+logic [9:0] SW,
+logic	Clk, Run, Continue,
+logic [9:0] LED,
+logic [6:0] HEX0, HEX1, HEX2, HEX3
+sl3_testtop test(.*)
+always begin
+	#1
+	PC = test.my_slc.d0.PC;
+	MAR = test.my_slc.d0.Reg_MAR.Out;
+	MDR = test.my_slc.d0.Reg_MDR.Out;
+	IR = test.my_slc.d0.Reg_IR.Out;	
+	end
+	
+	// set clock rule
+   always begin : CLOCK_GENERATION 
+		#1 Clk = ~Clk;
+   end
+
+	// initialize clock signal 
+	initial begin: CLOCK_INITIALIZATION 
+		Clk = 0;
+   end
+	
+	// begin testing
+	initial begin: TEST_VECTORS
+	// give a dummy number for switch (3 here) and run
+		Reset = 0;
+		Continue = 1;
+		Run = 0;
+	   S = 16'd0074;
+	#2 Reset = 1;
+	#2 Run = 1;
+	
+	// run again to see if fetch automatically halts
+	#10 Continue = 0;
+	#5 Continue = 1;
+	   S = 16'd0075;
+	#5 Continue = 0;
+	
+
+	end
+	 
+endmodule
+
+

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\intelFPGA_lite\\18.1\\ece385\\lab71\\software\\lab71
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\intelFPGA_lite\\18.1\\ece385\\lab71\\lab71_soc.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\intelFPGA_lite\\18.1\\ece385\\lab71\\software\\lab71_bsp

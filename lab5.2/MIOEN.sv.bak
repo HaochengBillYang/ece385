@@ -1,0 +1,10 @@
+module MIO(	input logic MIO_EN,
+				input logic [15:0] Data_to_CPU, BUS,
+				output logic [15:0] MIO_out
+				);
+				unique case(MIO_EN)
+				1'b0 MIO_out = BUS;
+				1'b1 MIO_out = MDR_In;
+				endcase
+				endmodule
+				

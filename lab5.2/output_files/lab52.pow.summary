@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Oct 17 08:20:10 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : lab52
+Top-level Entity Name : slc3_sramtop
+Family : MAX 10
+Device : 10M50DAF484C7G
+Power Models : Final
+Total Thermal Power Dissipation : 98.92 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 89.94 mW
+I/O Thermal Power Dissipation : 8.98 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

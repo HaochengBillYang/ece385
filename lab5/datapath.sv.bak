@@ -1,0 +1,10 @@
+module datapath(input logic Clk, Reset, 
+					 input logic LD_REG, LD_PC, LD_MDR, LD_MAR, LD_IR,
+					 input logic GatePC, GateMDR, GateALU, GateMARMUX,
+					 input logic [1:0] PCMUX
+					 input logic MIO_EN,
+					 input logic [15:0] MDR_In,
+					 output logic [15:0] IR, PC, MAR, MDR,
+					 );
+					 
+					 logic 

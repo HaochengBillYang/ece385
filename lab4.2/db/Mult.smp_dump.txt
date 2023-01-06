@@ -1,0 +1,21 @@
+
+State Machine - |Processor|control:C|curr_state
+Name curr_state.R curr_state.Q curr_state.P curr_state.O curr_state.N curr_state.M curr_state.L curr_state.K curr_state.J curr_state.I curr_state.H curr_state.G curr_state.F curr_state.E curr_state.D curr_state.C curr_state.B curr_state.A 
+curr_state.A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.B 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.C 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.E 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.F 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.G 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.H 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.I 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.J 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.K 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.L 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.M 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.N 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.O 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.P 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Q 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.R 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

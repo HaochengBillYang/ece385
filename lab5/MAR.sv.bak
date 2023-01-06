@@ -1,0 +1,9 @@
+module MAR(input logic Clk, LD_MAR, Reset,
+					input logic [15:0] MAR_in,
+					output logic [15:0] MAR_out
+);
+
+reg_16 pc(.Clk, .Reset, .Load(LD_MAR), .D_in(MAR_in), .D_out(MAR_out));
+
+
+endmodule

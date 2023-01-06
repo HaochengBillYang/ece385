@@ -1,0 +1,28 @@
+10:01:56 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab61_app_bsp//HAL/inc -I../lab61_app_bsp/ -I../lab61_app_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:12:6: warning: unused variable 'released' [-Wunused-variable]
+  int released = 1;
+      ^
+main.c:10:25: warning: unused variable 'SW_PIO' [-Wunused-variable]
+  volatile unsigned int *SW_PIO = (unsigned int*)0x70;
+                         ^
+main.c:9:25: warning: unused variable 'KEY1_PIO' [-Wunused-variable]
+  volatile unsigned int *KEY1_PIO = (unsigned int*)0x60;
+                         ^
+Info: Linking lab61_app.elf
+nios2-elf-g++  -T'../lab61_app_bsp//linker.x' -msys-crt0='../lab61_app_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab61_app_bsp/   -Wl,-Map=lab61_app.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o lab61_app.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab61_app.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0xa8 --timestamp 1665696610 --stderr_dev none --stdin_dev none --stdout_dev none --sopc_system_name lab61_soc --quartus_project_dir "C:/intelFPGA_lite/18.1/ece385/lab6" --jdi ../..//output_files/lab6.jdi --sopcinfo C:/intelFPGA_lite/18.1/ece385/lab6/software/lab61_app_bsp/../../lab61_soc.sopcinfo
+Info: (lab61_app.elf) 3816 Bytes program size (code + initialized data).
+Info:                 65530 KBytes free for stack + heap.
+Info: Creating lab61_app.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab61_app.elf >lab61_app.objdump
+[lab61_app build complete]
+
+10:01:57 Build Finished (took 1s.466ms)
+

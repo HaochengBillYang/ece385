@@ -1,0 +1,360 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do lab52_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/16_bit_register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/16_bit_register.sv 
+# -- Compiling module reg_16
+# 
+# Top level modules:
+# 	reg_16
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/BUS.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/BUS.sv 
+# -- Compiling module BUS_line
+# 
+# Top level modules:
+# 	BUS_line
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv 
+# -- Compiling module MUX2
+# -- Compiling module MUX4
+# -- Compiling module MUX8
+# 
+# Top level modules:
+# 	MUX2
+# 	MUX4
+# 	MUX8
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/test_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/test_memory.sv 
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/synchronizers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/synchronizers.sv 
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
+# 
+# Top level modules:
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/SLC3_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/Mem2IO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/Mem2IO.sv 
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/ISDU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/ISDU.sv 
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# End time: 08:07:23 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/PCMUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/PCMUX.sv 
+# -- Compiling module PCMUX
+# 
+# Top level modules:
+# 	PCMUX
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/MARMUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/MARMUX.sv 
+# -- Compiling module MARMUX
+# 
+# Top level modules:
+# 	MARMUX
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/SR2MUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/SR2MUX.sv 
+# -- Compiling module SR2MUX
+# 
+# Top level modules:
+# 	SR2MUX
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/MIOEN.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/MIOEN.sv 
+# -- Compiling module MIO
+# 
+# Top level modules:
+# 	MIO
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/BEN.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/BEN.sv 
+# -- Compiling module BEN
+# 
+# Top level modules:
+# 	BEN
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/DRMUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/DRMUX.sv 
+# -- Compiling module DRMUX
+# 
+# Top level modules:
+# 	DRMUX
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/SR1MUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/SR1MUX.sv 
+# -- Compiling module SR1MUX
+# 
+# Top level modules:
+# 	SR1MUX
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/MDR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/MDR.sv 
+# -- Compiling module MDR
+# 
+# Top level modules:
+# 	MDR
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/MAR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/MAR.sv 
+# -- Compiling module MAR
+# 
+# Top level modules:
+# 	MAR
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/memory_contents.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/memory_contents.sv 
+# -- Compiling package memory_contents_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module memory_parser
+# 
+# Top level modules:
+# 	memory_parser
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/PC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:24 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/PC.sv 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 08:07:24 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/IR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:25 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/IR.sv 
+# -- Compiling module IR
+# 
+# Top level modules:
+# 	IR
+# End time: 08:07:25 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/REGFILE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:25 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/REGFILE.sv 
+# -- Compiling module REGFILE
+# 
+# Top level modules:
+# 	REGFILE
+# End time: 08:07:25 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:25 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 08:07:25 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/slc3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:25 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/slc3.sv 
+# -- Compiling module slc3
+# 
+# Top level modules:
+# 	slc3
+# End time: 08:07:25 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/slc3_testtop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:25 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/slc3_testtop.sv 
+# -- Compiling module slc3_testtop
+# 
+# Top level modules:
+# 	slc3_testtop
+# End time: 08:07:25 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2 {C:/intelFPGA_lite/18.1/ece385/lab5.2/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:25 on Oct 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/ece385/lab5.2" C:/intelFPGA_lite/18.1/ece385/lab5.2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 08:07:25 on Oct 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 08:07:25 on Oct 17,2022
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.slc3_testtop
+# Loading work.slc3
+# Loading work.datapath
+# Loading work.DRMUX
+# Loading work.SR1MUX
+# Loading work.SR2MUX
+# Loading work.REGFILE
+# Loading work.reg_16
+# Loading work.MUX8
+# Loading work.ALU
+# Loading work.PCMUX
+# Loading work.MUX4
+# Loading work.PC
+# Loading work.MIO
+# Loading work.MDR
+# Loading work.MAR
+# Loading work.IR
+# Loading work.BUS_line
+# Loading work.MARMUX
+# Loading work.BEN
+# Loading work.Mem2IO
+# Loading work.ISDU
+# Loading work.test_memory
+# Loading work.SLC3_2
+# Loading work.memory_contents_sv_unit
+# Loading work.memory_parser
+# Loading work.HexDriver
+# Loading work.sync
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000000 ns
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/MARMUX.sv(9): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/marmux
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/MARMUX.sv(13): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/marmux
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/MIOEN.sv(7): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/mioen
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv(18): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/pcmux/pcmux0
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/ALU.sv(6): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/alu
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv(32): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/regfile/alub
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv(32): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/regfile/alua
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/SR2MUX.sv(6): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/sr2mux
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/SR1MUX.sv(7): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/sr1mux
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/DRMUX.sv(7): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/testtop/slc/d0/drmux
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv(32): No condition is true in the unique/priority if/case statement.
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/testtop/slc/d0/regfile/alua
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/ece385/lab5.2/allMUX.sv(32): No condition is true in the unique/priority if/case statement.
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/testtop/slc/d0/regfile/alub
+# End time: 08:22:44 on Oct 17,2022, Elapsed time: 0:15:19
+# Errors: 0, Warnings: 12

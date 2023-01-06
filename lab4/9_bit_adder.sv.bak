@@ -1,0 +1,9 @@
+module 9_bit_adder
+(
+input [8:0] A,B,
+input c_in,
+output [8:0] S_out,
+output logic X
+);
+
+adder9 

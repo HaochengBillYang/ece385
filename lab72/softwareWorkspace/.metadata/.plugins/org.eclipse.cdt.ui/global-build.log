@@ -1,0 +1,42 @@
+12:03:17 **** Incremental Build of configuration Nios II for project lab72 ****
+make all 
+Info: Building ../lab72_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab72_bsp/
+[BSP build complete]
+[lab72 build complete]
+12:03:22 **** Incremental Build of configuration Nios II for project lab72 ****
+make all 
+Info: Building ../lab72_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab72_bsp/
+[BSP build complete]
+[lab72 build complete]
+13:32:35 **** Incremental Build of configuration Nios II for project lab72 ****
+make all 
+Info: Building ../lab72_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab72_bsp/
+[BSP build complete]
+Info: Compiling lab7/main.c to obj/default/lab7/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab72_bsp//HAL/inc -I../lab72_bsp/ -I../lab72_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/lab7/main.o lab7/main.c
+In file included from lab7/text_mode_vga_color.h:16:0,
+                 from lab7/main.c:2:
+../lab72_bsp/system.h:190:41: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define VGA_TEXT_MODE_CONTROLLER_0_BASE 0x8000000
+                                         ^
+lab7/text_mode_vga_color.h:35:52: note: in expansion of macro 'VGA_TEXT_MODE_CONTROLLER_0_BASE'
+ static volatile struct TEXT_VGA_STRUCT* vga_ctrl = VGA_TEXT_MODE_CONTROLLER_0_BASE;
+                                                    ^
+In file included from lab7/main.c:2:0:
+lab7/text_mode_vga_color.h:35:41: warning: 'vga_ctrl' defined but not used [-Wunused-variable]
+ static volatile struct TEXT_VGA_STRUCT* vga_ctrl = VGA_TEXT_MODE_CONTROLLER_0_BASE;
+                                         ^
+lab7/text_mode_vga_color.h:38:21: warning: 'colors' defined but not used [-Wunused-variable]
+ static struct COLOR colors[]={
+                     ^
+Info: Linking lab72.elf
+nios2-elf-g++  -T'../lab72_bsp//linker.x' -msys-crt0='../lab72_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab72_bsp/   -Wl,-Map=lab72.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o lab72.elf obj/default/lab7/main.o obj/default/lab7/palette_test.o obj/default/lab7/text_mode_vga_color.o -lm -msys-lib=m
+nios2-elf-insert lab72.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x80051f0 --timestamp 1649226588 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name lab7_soc --quartus_project_dir "C:/intelFPGA_lite/18.1/ece385/lab72" --jdi ../..//output_files/Lab7.jdi --sopcinfo C:/intelFPGA_lite/18.1/ece385/lab72/software/lab72_bsp/../../lab7_soc.sopcinfo
+Info: (lab72.elf) 88 KBytes program size (code + initialized data).
+Info:             65440 KBytes free for stack + heap.
+Info: Creating lab72.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab72.elf >lab72.objdump
+[lab72 build complete]

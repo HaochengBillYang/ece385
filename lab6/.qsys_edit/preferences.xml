@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="175" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Interface Protocols,Library/Basic Functions/On Chip Memory,Project,Library/Interface Protocols/Serial,Library/Memory Interfaces and Controllers,Library/Processors and Peripherals/Peripherals,Library/University Program,Library,Library/Basic Functions,Library/Processors and Peripherals,Library/University Program/Generic IO,Library/Memory Interfaces and Controllers/Flash" />
+ <window width="1292" height="1407" x="-7" y="0" />
+ <generation path="lab61_soc/" />
+</preferences>

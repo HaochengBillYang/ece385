@@ -1,0 +1,77 @@
+//-------------------------------------------------------------------------
+//    Ball.sv                                                            --
+//    Viral Mehta                                                        --
+//    Spring 2005                                                        --
+//                                                                       --
+//    Modified by Stephen Kempf 03-01-2006                               --
+//                              03-12-2007                               --
+//    Translated by Joe Meng    07-07-2013                               --
+//    Fall 2014 Distribution                                             --
+//                                                                       --
+//    For use with ECE 298 Lab 7                                         --
+//    UIUC ECE Department                                                --
+//-------------------------------------------------------------------------
+
+
+module  ghost0 ( input Reset, frame_clk,
+					input [9:0] BallX, BallY, BallS,
+					input [9:0] SpawnX, SpawnY,
+					input Powerup,
+               output [9:0]  GhostX, GhostY, GhostS,
+					output Lost);
+    
+    logic [9:0] Ghost_X_Pos, Ghost_Y_Pos, Ghost_Size;
+	 logic state;
+	 logic Captured;
+	 
+
+    parameter [9:0] Ghost_X_Min=160;       // Leftmost point on the X axis
+    parameter [9:0] Ghost_X_Max=480;     // Rightmost point on the X axis
+    parameter [9:0] Ghost_Y_Min=40;       // Topmost point on the Y axis
+    parameter [9:0] Ghost_Y_Max=440;     // Bottommost point on the Y axis
+
+    assign Ghost_Size = 8;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
+
+	 always_ff @ (posedge Reset or posedge frame_clk )
+    begin: Move_Ghost
+        if (Reset)  // Asynchronous Reset
+        begin 
+				Ghost_Y_Pos <= SpawnY;
+				Ghost_X_Pos <= SpawnX;
+				Lost <= 1'b0;
+				state <= 1'b1;
+        end
+			else 
+			begin
+				if(GhostX+GhostS+2'b10 == Ghost_X_Max)
+				state <= 1'b0;
+				else if(GhostX-GhostS-2'b10 == Ghost_X_Min)
+				state <= 1'b1;
+				else
+				state <= state;
+				if (state)
+				Ghost_X_Pos <= Ghost_X_Pos+2;
+				else
+				Ghost_X_Pos <= Ghost_X_Pos-2;
+				if (Powerup)
+				begin
+				if (((GhostX+GhostS) >= (BallX-BallS)) & ((GhostX-GhostS) <= (BallX+BallS)) & ((GhostY+GhostS) >= (BallY-BallS)) & ((GhostY-GhostS) <= (BallY+BallS))) 
+						               Captured = 1; 
+				else 
+											Captured = 0;
+				end
+				else if (((GhostX+GhostS) >= (BallX-BallS)) & ((GhostX-GhostS) <= (BallX+BallS)) & ((GhostY+GhostS) >= (BallY-BallS)) & ((GhostY-GhostS) <= (BallY+BallS))) 
+											Lost = 1; 
+				else
+											Lost = 0;
+			end
+		end  
+       
+	 assign GhostX = Ghost_X_Pos;
+   
+    assign GhostY = Ghost_Y_Pos;
+   
+    assign GhostS = Ghost_Size;
+    
+
+endmodule

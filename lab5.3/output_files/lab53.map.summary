@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Oct 07 04:43:20 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : lab53
+Top-level Entity Name : slc3_sramtop
+Family : MAX 10
+Total logic elements : 968
+    Total combinational functions : 821
+    Dedicated logic registers : 269
+Total registers : 269
+Total pins : 148
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

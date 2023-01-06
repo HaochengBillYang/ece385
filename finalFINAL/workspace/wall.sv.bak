@@ -1,0 +1,4 @@
+module wall(input [9:0]BallX, BallY, BallS
+				output banW, banA, banS, banD
+				)
+				

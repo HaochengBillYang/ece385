@@ -1,0 +1,7 @@
+module wallbus(input [3:0] r0,
+					output [3:0] r
+);
+
+assign r = r0 & r0;
+
+endmodule

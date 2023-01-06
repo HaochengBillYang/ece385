@@ -1,0 +1,146 @@
+//-------------------------------------------------------------------------
+//    Ball.sv                                                            --
+//    Viral Mehta                                                        --
+//    Spring 2005                                                        --
+//                                                                       --
+//    Modified by Stephen Kempf 03-01-2006                               --
+//                              03-12-2007                               --
+//    Translated by Joe Meng    07-07-2013                               --
+//    Fall 2014 Distribution                                             --
+//                                                                       --
+//    For use with ECE 298 Lab 7                                         --
+//    UIUC ECE Department                                                --
+//-------------------------------------------------------------------------
+
+
+module  ghost ( input Reset, frame_clk,
+					input [7:0] direc_ctrl,
+					input [9:0] ghost_X_spawn, ghost_Y_spawn;
+					input [9:0] ghost_x_speed, ghost_y_speed;
+					input powerup
+               output [9:0]  BallX, BallY, BallS
+					output Ouch);
+    
+    logic [9:0] Ball_X_Pos, Ball_X_Motion, Ball_Y_Pos, Ball_Y_Motion, Ball_Size;
+	 
+
+    parameter [9:0] Ball_X_Min=120;       // Leftmost point on the X axis
+    parameter [9:0] Ball_X_Max=520;     // Rightmost point on the X axis
+    parameter [9:0] Ball_Y_Min=40;       // Topmost point on the Y axis
+    parameter [9:0] Ball_Y_Max=440;     // Bottommost point on the Y axis
+
+    assign Ball_Size = 8;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
+   
+ 
+	 
+	 always_ff @ (posedge Reset or posedge frame_clk )
+    begin: Move_Ball
+        if (Reset | captured)  // Asynchronous Reset
+        begin 
+            Ball_Y_Motion <= 10'd0; //Ball_Y_Step;
+				Ball_X_Motion <= 10'd0; //Ball_X_Step;
+				Ball_Y_Pos <= ghost_Y_spawn;
+				Ball_X_Pos <= ghost_X_spawn;
+        end
+           
+        /*else 
+        begin 
+				 if ( (Ball_Y_Pos + Ball_Size) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
+					  Ball_Y_Motion <= (~ (Ball_Y_Step) + 1'b1);  // 2's complement.
+					  
+				 else if ( (Ball_Y_Pos - Ball_Size) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
+					  Ball_Y_Motion <= Ball_Y_Step;
+					  
+				  else if ( (Ball_X_Pos + Ball_Size) >= Ball_X_Max )  // Ball is at the Right edge, BOUNCE!
+					  Ball_X_Motion <= (~ (Ball_X_Step) + 1'b1);  // 2's complement.
+					  
+				 else if ( (Ball_X_Pos - Ball_Size) <= Ball_X_Min )  // Ball is at the Left edge, BOUNCE!
+					  Ball_X_Motion <= Ball_X_Step;*/
+					  
+				 else 
+					  Ball_Y_Motion <= Ball_Y_Motion;  // Ball is somewhere in the middle, don't bounce, just keep moving
+					  
+				 
+				 case (keycode)
+					8'h04 : begin
+
+								Ball_X_Motion <= -(ghost_x_speed);//A
+								Ball_Y_Motion<= 0;
+							  end
+					        
+					8'h07 : begin
+								
+					        Ball_X_Motion <= ghost_x_speed;//D
+							  Ball_Y_Motion <= 0;
+							  end
+
+							  
+					8'h16 : begin
+
+					        Ball_Y_Motion <= ghost_y_speed;//S
+							  Ball_X_Motion <= 0;
+							 end
+							  
+					8'h1A : begin
+					        Ball_Y_Motion <= -(ghost_x_speed);//W
+							  Ball_X_Motion <= 0;
+							 end	  
+					default: ;
+			   endcase
+				
+				
+				
+
+						
+				 
+				 Ball_Y_Pos <= (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
+				 Ball_X_Pos <= (Ball_X_Pos + Ball_X_Motion);
+			
+			
+	  /**************************************************************************************
+	    ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!
+		 Hidden Question #2/2:
+          Note that Ball_Y_Motion in the above statement may have been changed at the same clock edge
+          that is causing the assignment of Ball_Y_pos.  Will the new value of Ball_Y_Motion be used,
+          or the old?  How will this impact behavior of the ball during a bounce, and how might that 
+          interact with a response to a keypress?  Can you fix it?  Give an answer in your Post-Lab.
+      **************************************************************************************/
+      
+			
+		end  
+    end
+       
+   
+
+
+
+	always_ff @ (posedge Reset or posedge frame_clk )
+		    begin
+						if (powerup)
+							if ( ((PacX) >= (BallX-BallS)) & ((PacX) <= (BallX+BallS)) & 
+						      ((PacY) >= (BallY-BallS)) & ((PacY) <= (BallY+BallS))) 
+						 
+						               captured = 1; 
+							else 
+											captured = 0;
+						else 
+							if ( ((PacX) >= (BallX-BallS)) & ((PacX) <= (BallX+BallS)) & 
+						      ((PacY) >= (BallY-BallS)) & ((PacY) <= (BallY+BallS))) 
+						 
+											Ouch = 1; 
+							else
+											Ouch = 0;
+						
+
+
+
+
+
+  	assign BallX = Ball_X_Pos;
+   
+    assign BallY = Ball_Y_Pos;
+   
+    assign BallS = Ball_Size;
+    
+
+endmodule

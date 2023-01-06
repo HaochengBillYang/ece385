@@ -1,0 +1,32 @@
+module testbench();
+
+timeunit 10ns;
+timeprecision 1ns;
+logic [9:0] LED,SW;
+logic Clk = 0;
+logic Run, Continue;
+logic [6:0] HEX0, HEX1, HEX2, HEX3;
+logic [15:0] PC, MAR, MDR, IR;
+logic Reset_Val;
+logic Run_ctrl, Continue_ctrl;
+assign Run= ~Run_ctrl;
+assign Continue= ~Continue_ctrl;
+
+slc3_testtop testtop(.*);
+always begin: CLOCK_GENERATION
+#1
+Clk =~Clk;
+end
+
+initial begin: CLOCK_INITIALIZATION
+Clk=0;
+end
+initial begin: TEST_VECTORS
+#0 
+Run_ctrl= 1'b1;
+Continue_Ctrl = 1'b1;
+#5
+Run_ctrl =1'b0;
+Continue_Ctrk=1'b0;
+
+#3

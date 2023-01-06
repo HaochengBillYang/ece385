@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Mar 21 23:02:04 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : ECE385Lab5
+Top-level Entity Name : slc3_testtop
+Family : MAX 10
+Device : 10M50DAF484C7G
+Power Models : Final
+Total Thermal Power Dissipation : 118.52 mW
+Core Dynamic Thermal Power Dissipation : 6.37 mW
+Core Static Thermal Power Dissipation : 90.03 mW
+I/O Thermal Power Dissipation : 22.11 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

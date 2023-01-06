@@ -1,0 +1,4 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,color_mapper:clr_map|lpm_mult:Mult2|mult_fgs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,color_mapper:clr_map|lpm_mult:Mult1|mult_fgs:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,color_mapper:clr_map|lpm_mult:Mult1|mult_fgs:auto_generated|mac_mult1,

@@ -1,0 +1,14 @@
+module PC_ (input  LD_PC,
+              input  logic [15:0]  PC_In,
+              output logic [15:0]  PC, PC_1);
+
+
+reg_16 PC (.Clk(Clk), .Reset(1'b0), .Load(LD_PC), .Data_In(PC_In), .Data_Out(PC));
+
+always comb
+begin
+	PC_1 = PC + 1;
+
+end
+
+endmodule
