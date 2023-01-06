@@ -1,4 +1,4 @@
-# ece385
+# ECE385
 ECE385 @ UIUC FA22
 
 Professor: Zuofu Cheng
